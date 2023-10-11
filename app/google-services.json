@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696679924363",
+    "firebase_url": "https://quiz-a73e8.firebaseio.com",
+    "project_id": "quiz-a73e8",
+    "storage_bucket": "quiz-a73e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696679924363:android:549f4cee81962961f44a8e",
+        "android_client_info": {
+          "package_name": "com.example.blooddonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696679924363-uvnbf915n6svf3oc8ddllrbobkc38uiq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnucLcSOcQbhUV5xhS6FvGUF2LGiTQiVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696679924363-uvnbf915n6svf3oc8ddllrbobkc38uiq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

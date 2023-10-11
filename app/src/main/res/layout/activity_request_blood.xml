@@ -10,6 +10,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/ask"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,9 +18,174 @@
             android:orientation="vertical"
             >
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rect_curve"
+                    app:tint="#000"
+                    android:layout_marginTop="-15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Upload Prescription"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/rect_curve"
+                    android:backgroundTint="#009688"
+                    android:paddingTop="5dp"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Patient Name"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Unit Needed"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Date"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hospital Location"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Personal Contact Number"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Message to donor"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type of Urgency"
+                    android:inputType="textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
 
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/ask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Request"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="-2dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFF5F2"
+        android:paddingBottom="10dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/top_curve"
+        android:backgroundTint="#F44336"
+        />
 
 </RelativeLayout>

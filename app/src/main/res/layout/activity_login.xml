@@ -5,9 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Activities.Login">
+    tools:context=".ui.Activities.Auth.Login">
 
 
+    <TextView
+        android:id="@+id/l_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Skip >>"
+        android:textStyle="bold"
+        android:textColor="#737272"
+        android:background="@drawable/rect_curve"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:backgroundTint="#FFE4E4"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,13 +36,14 @@
                 android:id="@+id/profile_image"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
-                android:src="@mipmap/ic_launcher_round"
+                android:src="@mipmap/ic_launcher"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#F44336"
                 android:layout_gravity="center"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/l_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
@@ -42,6 +59,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/l_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
@@ -58,6 +76,7 @@
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <TextView
+                android:id="@+id/l_forgot_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forgot Password?"
@@ -71,6 +90,7 @@
                 />
 
             <TextView
+                android:id="@+id/l_login_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
@@ -99,6 +119,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/l_signup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sign Up"

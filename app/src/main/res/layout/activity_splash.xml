@@ -5,13 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".startup.SplashScreen">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher_round"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
         android:layout_centerInParent="true"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#F44336"
         />
 
     <TextView

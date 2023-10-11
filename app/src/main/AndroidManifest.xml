@@ -19,17 +19,17 @@
             android:name=".ui.Activities.MakeDonation"
             android:exported="false" />
         <activity
-            android:name=".ui.Activities.Signup"
+            android:name=".ui.Activities.Auth.Signup"
             android:exported="false" />
         <activity
-            android:name=".ui.Activities.Login"
+            android:name=".ui.Activities.Auth.Login"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_main" />
+            android:label="MainActivity" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".startup.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
