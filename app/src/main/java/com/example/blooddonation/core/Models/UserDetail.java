@@ -1,7 +1,8 @@
 package com.example.blooddonation.core.Models;
 
 public class UserDetail {
-    private String name, email, phone_no, uid, aadhaar, blood_group, dob, gender, location;
+    private String name, email, phone_no, uid, aadhaar, blood_group, dob, gender, location, img_url;
+    private boolean donor;
 
     public UserDetail() {
     }
@@ -9,7 +10,8 @@ public class UserDetail {
     public UserDetail(String name, String email,
                       String phone_no, String uid,
                       String aadhaar, String blood_group,
-                      String dob, String gender, String location) {
+                      String dob, String gender, String location,
+                      String img_url, boolean donor) {
         this.name = name;
         this.email = email;
         this.phone_no = phone_no;
@@ -19,6 +21,24 @@ public class UserDetail {
         this.dob = dob;
         this.gender = gender;
         this.location = location;
+        this.img_url = img_url;
+        this.donor = donor;
+    }
+
+    public String getImg_url() {
+        return img_url;
+    }
+
+    public void setImg_url(String img_url) {
+        this.img_url = img_url;
+    }
+
+    public boolean isDonor() {
+        return donor;
+    }
+
+    public void setDonor(boolean donor) {
+        this.donor = donor;
     }
 
     public String getName() {

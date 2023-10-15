@@ -22,7 +22,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="?android:attr/windowBackground"
+            app:itemTextColor="#F44336"
             app:backgroundTint="#fff"
-            app:menu="@menu/bottom_nav_menu" />
+            app:menu="@menu/bottom_nav_menu"
+            style="@style/ThemeOverlay.App.BottomNavigationView"
+            />
 
 </RelativeLayout>

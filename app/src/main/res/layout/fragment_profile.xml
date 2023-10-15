@@ -148,6 +148,7 @@
                 android:text="Available to donate"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="10dp"
+                android:checked="true"
                 />
 
             <View

@@ -4,12 +4,12 @@ public class LoginData {
 
     private String email, password;
 
+    public LoginData() {
+    }
+
     public LoginData(String email, String password) {
         this.email = email;
         this.password = password;
-    }
-
-    public LoginData() {
     }
 
     public String getEmail() {

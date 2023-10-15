@@ -53,8 +53,9 @@ public class Login extends AppCompatActivity {
                             @Override
                             public void onSuccess(String data) {
                                 Toast.makeText(Login.this, "MSG: "+data, Toast.LENGTH_SHORT).show();
+
                                 startActivity(new Intent(Login.this, MainActivity.class));
-                                finish();//todo check for past activity page flow and send back to previous page
+                                finish();//todo check for past activity page flow and send back to previous page shared pref
                             }
 
                             @Override

@@ -48,6 +48,14 @@ dependencies {
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-storage")
+    //com.google.firebase:firebase-analytics
+    //com.google.firebase:firebase-messaging
+    //com.google.firebase:firebase-dynamic-links
+    //com.google.firebase:firebase-inappmessaging
+    //com.google.firebase:firebase-inappmessaging-display
+    //com.google.firebase:firebase-appcheck-safetynet
 
     // dependency for slider view
     //implementation("com.github.smarteist:autoimageslider:1.3.9")
